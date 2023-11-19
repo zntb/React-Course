@@ -1,1 +1,1 @@
-# React-Course
+Academind React course assignment solutions and projects.
