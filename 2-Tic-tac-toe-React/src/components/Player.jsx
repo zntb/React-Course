@@ -21,13 +21,21 @@ export default function Player({
   }
 
   let editablePlayerName = <span className="player-name">{playerName}</span>;
-  //   let btnCaption = 'Edit';
+
+  const resetInput = (e) => {
+    e.target.value = '';
+  };
 
   if (isEditing) {
     editablePlayerName = (
-      <input type="text" required value={playerName} onChange={handleChanhge} />
+      <input
+        type="text"
+        required
+        value={playerName}
+        onFocus={resetInput}
+        onChange={handleChanhge}
+      />
     );
-    // btnCaption = 'Save';
   }
 
   return (

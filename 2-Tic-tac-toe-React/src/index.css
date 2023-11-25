@@ -249,7 +249,9 @@ ol {
 }
 
 #log li {
+  border: 1px solid #3f3b00;
   border-radius: 4px;
+  background: #f0cb5c;
   animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   margin: 0.75rem;
 }
