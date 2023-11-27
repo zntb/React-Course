@@ -23,7 +23,7 @@ export default function AuthInputs() {
   return (
     <div id="auth-inputs">
       <div className="controls">
-        <p>
+        <p className="paragraph">
           {/* Dynamic conditional classes */}
           <label className={`label ${emailNotValid ? 'invalid' : ''}`}>
             Email
@@ -34,7 +34,7 @@ export default function AuthInputs() {
             onChange={(event) => handleInputChange('email', event.target.value)}
           />
         </p>
-        <p>
+        <p className="paragraph">
           <label className={`label ${emailNotValid ? 'invalid' : ''}`}>
             Password
           </label>
