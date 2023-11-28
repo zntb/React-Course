@@ -1,4 +1,12 @@
 import { useState } from 'react';
+import { styled } from 'styled-components';
+
+const controlContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+`;
 
 export default function AuthInputs() {
   const [enteredEmail, setEnteredEmail] = useState('');
@@ -22,7 +30,7 @@ export default function AuthInputs() {
 
   return (
     <div id="auth-inputs">
-      <div className="controls">
+      <controlContainer>
         <p className="paragraph">
           {/* Dynamic conditional classes */}
           <label className={`label ${emailNotValid ? 'invalid' : ''}`}>
@@ -46,7 +54,7 @@ export default function AuthInputs() {
             }
           />
         </p>
-      </div>
+      </controlContainer>
       <div className="actions">
         <button type="button" className="text-button">
           Create a new account
