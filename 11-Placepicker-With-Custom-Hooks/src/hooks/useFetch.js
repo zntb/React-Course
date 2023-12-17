@@ -24,6 +24,7 @@ export default function useFetch(fetchFn, initialValue) {
   return {
     isFetching,
     fetchedData,
+    setFechedData,
     error,
   };
 }
