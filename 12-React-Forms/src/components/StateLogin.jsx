@@ -16,12 +16,11 @@ export default function Login() {
   function handleSubmit(event) {
     event.preventDefault();
 
+    if (emailIsInvalid) {
+      return;
+    }
+
     console.log(enteredValues);
-    // Reset the input values
-    setEnteredValues({
-      email: '',
-      password: '',
-    });
   }
 
   function handleInputChange(identifier, value) {
