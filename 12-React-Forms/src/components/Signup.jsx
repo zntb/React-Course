@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 export default function Signup() {
+  const [passwordsAreNotEqual, setpasswordsAreNotEqual] = useState(false);
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -7,6 +11,12 @@ export default function Signup() {
     // Gets all the imput fields and their entered values(need name properties!):
     const data = Object.fromEntries(fd.entries());
     data.acquisition = acquisitionChannel;
+
+    if (data.password !== data['confirm-password']) {
+      setpasswordsAreNotEqual(true);
+      return;
+    }
+
     console.log(data);
   }
 
@@ -40,6 +50,9 @@ export default function Signup() {
             name="confirm-password"
             required
           />
+          <div className="control-error">
+            {passwordsAreNotEqual && <p>Passwords must match.</p>}
+          </div>
         </div>
       </div>
 
