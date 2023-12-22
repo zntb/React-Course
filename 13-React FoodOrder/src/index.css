@@ -234,6 +234,21 @@ h1 {
   color: #ffab04;
 }
 
+.close-button {
+  background-color: transparent;
+  border: 1px solid #ffc404;
+  border-radius: 4px;
+  padding: 0.5rem 0.7rem;
+
+  transition: all 0.3s;
+}
+
+.close-button:hover,
+.close-button:active {
+  background-color: #fff8db3d;
+  border-color: #ffab04;
+}
+
 .modal {
   background-color: #e4ddd4;
   border-radius: 6px;
