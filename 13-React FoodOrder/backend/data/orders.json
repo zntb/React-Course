@@ -7,7 +7,47 @@
         "price": "12.99",
         "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
         "image": "images/margherita-pizza.jpg",
-        "quantity": 2
+        "quantity": 4
+      }
+    ],
+    "customer": {
+      "name": "Test",
+      "email": "test@test.com",
+      "street": "TestStreet Nr. 1",
+      "postal-code": "111111",
+      "city": "TestCity"
+    },
+    "id": "39.46633054882209"
+  },
+  {
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": "12.99",
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 5
+      }
+    ],
+    "customer": {
+      "name": "Test",
+      "email": "test@test.com",
+      "street": "TestStreet Nr. 1",
+      "postal-code": "111111",
+      "city": "TestCity"
+    },
+    "id": "682.4625987953583"
+  },
+  {
+    "items": [
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": "8.99",
+        "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+        "image": "images/mac-and-cheese.jpg",
+        "quantity": 1
       },
       {
         "id": "m3",
@@ -25,6 +65,6 @@
       "postal-code": "111111",
       "city": "TestCity"
     },
-    "id": "130.83857231518746"
+    "id": "4.834848258045588"
   }
 ]

@@ -20,10 +20,10 @@ body {
 
 .error {
   width: 25rem;
-  margin: auto;
+  margin: 0.5rem auto;
   padding: 0.2rem;
   text-align: center;
-  background-color: darksalmon;
+  background-color: #f3acac;
   color: #1d1a16;
   border-radius: 4px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
